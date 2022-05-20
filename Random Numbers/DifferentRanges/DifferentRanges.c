@@ -28,14 +28,16 @@ int main(void)
     fgets(iMax, sizeof(iMax), stdin);
     if (iMax[strlen(iMax) - 1] != '\n')
     {
-        while ((getchar()) != '\n');
+        int b;
+        while( (b = getchar()) != '\n' && b != EOF){}
     }
 
     printf("Enter the count>");
     fgets(iCount, sizeof(iCount), stdin);
     if (iCount[strlen(iCount) - 1] != '\n')
     {
-        while ((getchar()) != '\n');
+        int b;
+        while( (b = getchar()) != '\n' && b != EOF){}
     }
 
     min = strtol(iMin, NULL, 10);
