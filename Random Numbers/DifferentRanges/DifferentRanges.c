@@ -52,5 +52,6 @@ int main(void)
     }
 
     printf("\n\nGenerated %d numbers from %d to %d", count, min, max);
+    return 0;
 
 }
