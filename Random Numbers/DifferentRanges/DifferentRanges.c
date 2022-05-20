@@ -20,7 +20,8 @@ int main(void)
     {
         //If the data > our buffer for iMin the the last char in the string will not be a new line
         //This will clear the buffer
-        while ((getchar()) != '\n');
+        int b;
+        while( (b = getchar()) != '\n' && b != EOF){}
     }
 
     printf("Enter the max>");
